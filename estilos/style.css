@@ -1,0 +1,95 @@
+body {
+    margin: 0px;
+    border: 0px solid transparent;
+}
+.centrar {
+    background-image: url('../imagenes/fondo.gif'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 200px;
+    width: 50%;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff; 
+}
+.navbar-light .navbar-brand {
+    color: #ffffff; 
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;base64,...'); 
+}
+.img-fluid {
+    max-width: 100%; 
+    height: auto; 
+}
+.text-center p {
+    margin-top: 10px; 
+}
+.image-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    position: relative;
+    height: 99px; 
+}
+.moving-image {
+    white-space: nowrap;
+    height: 100%;
+    animation: moveRight 20s linear infinite;
+}
+
+@keyframes moveRight {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(1800%);
+    }
+}
+p{
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: #c4b0b0;
+}
+.text-center {
+    position: relative; 
+    display: inline-block; 
+}
+.tooltip-text {
+    background-image: url('../imagenes/tierra.jpg');
+    visibility: hidden;
+    background-size: cover;
+    width: 200px;
+    height: 90px;
+    border-color: #ff0048;
+    color: #8f817e;
+    text-align: center;
+    border-radius: 4px; 
+    padding: 5px; 
+    position: absolute; 
+    z-index: 1; 
+    bottom: -23%; 
+    left: 50%; 
+    margin-left: 60px; 
+    opacity: 0; 
+    transition: opacity 0.2s; 
+}
+.text-center:hover .tooltip-text {
+    visibility: visible; 
+    opacity: 9; 
+}
+#containerr {
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+}
+#movingImage {
+    position: absolute;
+    height: 100%;
+}
+.logo{
+    height: 200%;
+    position: absolute;
+}
